@@ -14,7 +14,7 @@ I created an S3 bucket to store and serve the static website files. This bucket 
 ### Content Upload and Management: 
 I provided instructions and scripts for uploading and managing your website content within the S3 bucket.
 
-### Prerequisites:
+## Prerequisites:
 
 1. Basic knowledge of AWS services and concepts.
 2. Familiarity with Terraform and infrastructure as code principles.
