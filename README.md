@@ -135,12 +135,10 @@ terraform applyb -auto-approve
 1. We use Output file for get your webite link in your IDE , you don't have a need to go for link in AWS Console.
 2. Define __output.tf__ file using the below terraform code :
 ```
-
 output "websiteendpoint" {
     value = aws_s3_bucket.bucket1.website_endpoint
   
 }
-
 ```
 3. And then run the following command :
 
