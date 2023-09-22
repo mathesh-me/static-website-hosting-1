@@ -19,7 +19,8 @@ I provided instructions and scripts for uploading and managing your website cont
 1. Basic knowledge of AWS services and concepts.
 2. Familiarity with Terraform and infrastructure as code principles.
 3. An AWS account with appropriate permissions.
-4. This project serves as an excellent foundation for hosting various types of static websites, including personal blogs, portfolio sites, or small business websites.
+4. An IDE of your Choice.
+5. This project serves as an excellent foundation for hosting various types of static websites, including personal blogs, portfolio sites, or small business websites.
 
 
 ## Steps :
@@ -36,9 +37,11 @@ Create a .tf file (e.g., main.tf) to define your infrastructure as code using Te
 ### Step 3: Define your Files
 
 1. Define the AWS provider and required resources like S3 buckets, IAM roles, and policies
-2. Define ```provider.tf```` file , you can refer from the my repository and make changes as per your needs.
-3. And then run
-``` terraform init```
+2. Define ```provider.tf``` file , you can refer from the my repository and make changes as per your needs.
+3. And then run ``` terraform init``` command , It will install necessary things required for connecting to AWS.
+4. And then define ___resource.tf___ file and ___output.tf___ file , You can also refer these two files from my repository.
+5. Remember that , first run the code for creating the bucket after bucket creation you can add the remaining code.
+
 ### Step 4: Define Your Website Content
 
 Prepare your static website files (HTML, CSS, JavaScript, etc.) locally on your computer.
