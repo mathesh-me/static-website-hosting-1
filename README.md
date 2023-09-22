@@ -20,3 +20,25 @@ I provided instructions and scripts for uploading and managing your website cont
 2. Familiarity with Terraform and infrastructure as code principles.
 3. An AWS account with appropriate permissions.
 4. This project serves as an excellent foundation for hosting various types of static websites, including personal blogs, portfolio sites, or small business websites.
+
+
+## Steps :
+
+### Step 1: Set Up Your Development Environment
+
+Install Terraform and the AWS Command Line Interface (CLI) on your local machine.
+Configure your AWS credentials by running ```aws configure``` and providing your AWS access key and secret key.
+
+### Step 2: Create a Terraform Configuration File
+
+Create a .tf file (e.g., main.tf) to define your infrastructure as code using Terraform.
+
+### Step 3: Define your Files
+
+1. Define the AWS provider and required resources like S3 buckets, IAM roles, and policies
+2. Define ```provider.tf```` file , you can refer from the my repository and make changes as per your needs.
+3. And then run
+``` terraform init```
+### Step 4: Define Your Website Content
+
+Prepare your static website files (HTML, CSS, JavaScript, etc.) locally on your computer.
