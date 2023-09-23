@@ -6,13 +6,13 @@ In this project, I developed a streamlined infrastructure for hosting a static w
 ## Key Components and Features:
 
 ### Terraform Infrastructure as Code (IaC):
-I utilized Terraform, an IaC tool, to define and provision the AWS resources required for our static website hosting solution. This allows for version-controlled, repeatable infrastructure deployments.
+I utilized Terraform, an IaC tool, to define and provision the AWS resources required for my static website hosting solution. This allows for version-controlled, repeatable infrastructure deployments.
 
 ### AWS S3 Bucket:
 I created an S3 bucket to store and serve the static website files. This bucket is configured for website hosting, allowing for easy content delivery.
 
 ### Content Upload and Management: 
-I provided instructions and scripts for uploading and managing your website content within the S3 bucket.
+I provided instructions and scripts for uploading and managing my website content within the S3 bucket.
 
 ## Prerequisites:
 
