@@ -34,11 +34,11 @@ Configure your AWS credentials by running ```aws configure``` and providing your
 
 To prepare static website files (HTML), place them in the directory where your Terraform configuration files are located. Name the main HTML file "index.html," and optionally, you can also include an "error.html" file. If you prefer, you can reference my repository for the static website HTML files.
 
-### Step 3: Create a Terraform Configuration File
+### Step 3: Terraform Configuration File Syntax
 
-Create a .tf file (e.g., main.tf) to define your infrastructure as code using terraform in your IDE.
+If we want to Create a terraform configuration file we have to use .tf (e.g., main.tf) to define the infrastructure as code using terraform.
 
-### Step 4: Define your Configuration Files 
+### Step 4: Define your Configuration Files in your IDE
 ### Define the AWS provider and required resources like S3 buckets, IAM roles, and policies
 1. Define ```provider.tf``` file using the below code :
 
