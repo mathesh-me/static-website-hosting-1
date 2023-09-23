@@ -32,7 +32,7 @@ Configure your AWS credentials by running ```aws configure``` and providing your
 
 ### Step 2: Define Your Website Content
 
-Prepare your static website files (HTML) in your particular directory where terraform configuration files are present and name it as index.html , if you want you can also add error.html file also, or you can also refer my repository for static website HTML file.
+To prepare static website files (HTML), place them in the directory where your Terraform configuration files are located. Name the main HTML file "index.html," and optionally, you can also include an "error.html" file. If you prefer, you can reference my repository for the static website HTML files.
 
 ### Step 3: Create a Terraform Configuration File
 
@@ -47,9 +47,15 @@ provider "aws" {
     region = "ap-south-1"
 }
 ```
-2. In your IDE open the terminal and navigate to the directory where you create this configuration files.
-3. And then run ``` terraform init``` command , It will install the necessary things required for connecting to AWS.<br>
-4. And then define __resource.tf__ file for creating bucket using the below code :
+2. In your Integrated Development Environment (IDE), open the terminal and navigate to the directory where you have created these configuration files.
+3. After navigating to the directory where your configuration files are located in your IDE's terminal, you can run the following command to initialize Terraform and prepare it for use with AWS:
+
+```shell
+terraform init
+```
+
+Running `terraform init` will install the necessary plugins and modules required for connecting to AWS and managing your infrastructure.<br>
+4. And then define __resource.tf__ file for creating bucket by using the below code :
 
 ```
 resource "aws_s3_bucket" "bucket1" {
@@ -57,7 +63,7 @@ resource "aws_s3_bucket" "bucket1" {
   
 }
 ```
-5. Use the below command for creating the bucket :
+5. Then below command for creating the bucket :
 
 ```
 terraform apply -auto-approve
@@ -127,13 +133,13 @@ EOF
 ```
 terraform applyb -auto-approve
 ```
-8. The above code will apply the neccessary configurations like static website hosting , bucket policies , public access block off in your bucket.
-9. Remember that this codes are I got from terraform documentary page I changed it for my needs , Don't foget to change your bucket name , region and configurations as per your needs.
+8. The code above will apply the necessary configurations for features such as static website hosting, bucket policies, and blocking public access to your bucket.
+9. Certainly, it's important to customize the code to your specific needs. Please remember to change the bucket name, region, and configurations as per your requirements when using the code from the Terraform documentation.
 
 ### Step 5: Define the Output file
 
-1. We use Output file for get your webite link in your IDE , you don't have a need to go for link in AWS Console.
-2. Define __output.tf__ file using the below terraform code :
+1. We use an output file to obtain your website link in your IDE, eliminating the need to access the link through the AWS Console.
+2. Define __output.tf__ file by using the below terraform code :
 ```
 output "websiteendpoint" {
     value = aws_s3_bucket.bucket1.website_endpoint
@@ -149,7 +155,7 @@ terraform apply -auto-approve
 
 ![s3](https://github.com/mathesh-me/static-website-host-1/assets/144098846/90551cc8-ed1e-45c3-91b1-ffcce24666e1)
 
-### Step 6: Verify your Work
+### Step 6: Verify the Output 
 
 Copy the link and paste it in your favourite browser.
 
