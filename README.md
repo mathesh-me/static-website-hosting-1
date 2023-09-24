@@ -3,6 +3,11 @@
 ## Project Description:
 In this project, I developed a streamlined infrastructure for hosting a static website using Terraform and Amazon Web Services (AWS) S3. The primary goal of this project is to demonstrate the automated provisioning and deployment of a web hosting solution for static websites.
 
+## Overview:
+
+![s3](https://github.com/mathesh-me/static-website-host-1/assets/144098846/ab68ff80-7841-4674-9b3c-ceac0710a39b)
+
+
 ## Key Components and Features:
 
 ### Terraform Infrastructure as Code (IaC):
