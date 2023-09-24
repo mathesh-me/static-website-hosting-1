@@ -24,7 +24,7 @@ I provided instructions and scripts for uploading and managing my website conten
 1. Basic knowledge of AWS services and concepts.
 2. Familiarity with Terraform and infrastructure as code principles.
 3. An AWS account with appropriate permissions.
-4. An IDE of your Choice.
+4. An IDE of your Choice , I would suggest VS Code Editor .
 5. This project serves as an excellent foundation for hosting various types of static websites, including personal blogs, portfolio sites, or small business websites.
 
 
